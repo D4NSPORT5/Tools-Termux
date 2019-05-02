@@ -297,9 +297,11 @@ while loop == True:
 		elif (lang == "Rus") or (lang == "rus"):
 			print("Пока! Счастливого хакинга)")
 			loop = False
-		
-	otv = input("#: ")
-	if (otv == "n") or (otv == "н"):	
-		menu()
-	elif (otv == "y") or (otv == "д"):
+	if kavo == 99:
 		loop = False
+	else:
+		otv = input("#: ")
+		if (otv == "n") or (otv == "н"):	
+			menu()
+		elif (otv == "y") or (otv == "д"):
+			loop = False
